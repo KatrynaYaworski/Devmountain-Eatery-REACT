@@ -9,6 +9,7 @@
     padding-bottom: 15px;
     gap: 15px;
     font-weight: lighter;
+    min-height: 61.8vh;
 }
 
 .newRecipe_title {
@@ -43,6 +44,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
 }
 

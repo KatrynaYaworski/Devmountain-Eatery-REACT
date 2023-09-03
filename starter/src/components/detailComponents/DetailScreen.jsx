@@ -13,10 +13,19 @@ const DetailScreen = () => {
       console.log(res.data)
     });
   }, []);
-
+  let parsedInstructions
+  try {
+    parsedInstructions = JSON.parse(recipe.instructions)
+  } catch (error) {
+    parsedInstructions = recipe.instructions
+  }
   return (
     <section>
+      <div className={styles.header_image_container}>
+        <div className={styles.overlay}></div>
       <img className={styles.image} src={recipe.image_url} />
+      <span className={styles.recipe_title}>{recipe.recipe_name}</span>
+      </div>
       <main className={styles.main_container}>
         <div className={styles.ri_container}>
           <h2>{recipe.recipe_name}</h2>
@@ -30,7 +39,7 @@ const DetailScreen = () => {
         <div className={styles.inst_container}>
           <h2>Instructions</h2>
           <p className={styles.inst_details}>
-          {recipe.instructions && JSON.parse(recipe.instructions)}
+          {parsedInstructions}
           </p>
         </div>
       </main>

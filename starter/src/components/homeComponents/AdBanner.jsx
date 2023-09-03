@@ -12,9 +12,12 @@ const AdBanner = () => {
           rgba(0, 0, 0, 0.8),
           rgba(0, 0, 0, 0.8)),
           url(${salmon})`,
-        backgroundSize: "cover"
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center"
+        
       }}
-    >
+      >
       <div className={styles.banner_text}>
         <h3>New Recipe</h3>
         <h1 className={styles.h1}>Pineapple Salmon</h1>

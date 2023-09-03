@@ -1,31 +1,36 @@
 .banner_container {
     color: white;
-    height: 75%;
+    height: 50vh;
     font-family: 'Roboto', sans-serif;
 }
 
 .blue_btn {
     background-color: #578A8B;
     border: none;
-    padding: 6px 10px;
+    padding: 6px 16px;
     color: white;
+    font-size: 19px;
+    margin-top: 15px;
+    
 }
 
 .banner_text {
-    height: 60vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 0 200px;
+    gap: 20px;
+    padding: 0 500px;
     text-align: center;
+    font-size: 20px;
 }
 
 .h1 {
-    font-size: 50px;
-    font-family: bold Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #DB7533;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .recipe_container {

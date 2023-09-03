@@ -5,8 +5,34 @@
     gap: 25px;
     justify-content: center;
     min-height: 55vh;
+    margin-top: 20px;
 }
 
+.header_image_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+.recipe_title{
+    position: absolute;
+    z-index: 3;
+    font-size: 50px;
+    top: 40%;
+    /* left: 30%; */
+    font-size: 75px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #DB7533;
+    font-weight: bold;
+}
+.overlay{
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: 2;
+}
 .ri_container {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
